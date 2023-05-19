@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 10</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
+    
+<script>
+    $(document).ready(()=>{
+        $('#uno').click(function(){
+            const link = document.getElementById("link");
+            link.innerHTML="https://twitter.com/";
+        });
+        $('#dos').click(function(){
+            const link = document.getElementById("link");
+            link.innerHTML="https://facebook.com/";
+        });
+        $('#tres').click(function(){
+            const link = document.getElementById("link");
+            link.innerHTML="https://youtube.com/";
+        });
+    });
+</script>
+
+
+<body>
+    <div>
+        <h1>SELECCIONE SU RED SOCIAL DE PREFERENCIA. DEBAJO APARECERA EL ENLACE</h1>
+    </div>
+    <div> 
+        <button id="uno">TWITTER</button>
+    </div>
+    <div> 
+        <button id="dos">FB</button>
+    </div>
+    <div> 
+        <button id="tres">YOUTUBE</button>
+    </div>
+    <div>
+        <h5>ENLACE AQUI</h5>
+        <a id="link" href=" "></a>
+    </div>
+</body>
+</html>

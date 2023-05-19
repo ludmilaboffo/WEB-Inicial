@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <title> Formulario envio caja </title>
+        <script>
+            function enviar(){
+                let nombre = document.getElementsByTagName("input")[0].value;
+                
+                let pedirMat = document.getElementsByName("material")[0].value;
+
+                let pedir = document.getElementById("pedido");
+                pedir.innerHTML = nombre + ' a pedido una caja de ' + pedirMat;
+
+            }
+
+     
+        </script>
+    </head>
+
+    <body>
+        <h2> Formulario </h2>
+        <p> Nombre del cliente </p>
+        <input type="text">
+        
+        <section>
+            <label for="material">Material de la caja:</label>
+            <select name="material">
+                <option value="madera">Madera</option>
+                <option value="carton">Carton</option>
+            </select>
+        </section>
+
+        <div>
+            <label for="tamaÃ±o">Ingrese la medida de la caja</label>
+            <br>
+            Diminuta <input type="radio" name="tamanio" id="mini"><br>
+            Mediana <input type="radio" name="tamanio" id="medio"><br>
+            Grande <input type="radio" name="tamanio" id="grande"><br>
+        </div>
+        <div>
+        <button onclick="enviar()">Enviar</button>
+        <span id="pedido"> </span>
+
+        
+    </body>
+
+</html>

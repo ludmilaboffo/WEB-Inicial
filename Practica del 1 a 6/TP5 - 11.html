@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP N°5</title>
+
+    <script type="text/javascript">
+    function cambiarTemperatura(){
+        let grados= document.getElementById("convertir_grados").value;
+        let fahr= (grados*9)/5+32;
+
+        document.getElementById("far").value = fahr;
+    }
+    </script>
+</head>
+<body>
+   <form class="temperatura">
+    <label for="Grados"> <b>GRADOS</b></label>
+    <input type="number" id="convertir_grados">
+    <label for="Fahrenheit"><b>FAHREINHEIT</b>></label>
+    <input type="number" id="far">
+    <br>
+    <input type="button" value="Conversión" onclick="cambiarTemperatura();">
+   </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP10</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
+    <script>
+    $(document).ready(()=>{
+       $('#notUno').click(function(){
+         $('#uno').css('font-size','large');
+       }); 
+       $('#notDos').click(function(){
+         $('#dos').css('font-size','large');
+       }); 
+       $('#notTres').click(function(){
+         $('#tres').css('font-size','large');
+       }); 
+    });
+    </script>
+
+</head>
+
+<style>
+    h1{
+        color:red;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    p{
+        font-size:small;
+    }
+</style>
+
+<body>
+    <div class="noticia uno">
+        <h1>La "mejor milanesa del mundo" está en Bariloche: cómo es y dónde comerla</h1>
+            <p id="uno">
+                En Bariloche se encuentra uno de los mejores platos del mundo. 
+                Y no lo dice la subjetividad de los paladares de los miles de turistas que llegan cada año a este destino de la Patagonia, 
+                sino los expertos.
+                El único plato de toda la Argentina que logró ser parte de este listado, ubicándose en el puesto número 72,
+                es nada más y nada menos que la milanesa a la napolitana. Pero no cualquiera; la ganadora es la que hacen en La Fonda del Tío,
+                un famoso bodegón barilochense.
+            </p>
+            <button id="notUno">NOTICIA UNO</button>
+    </div>
+    <div class="'noticia dos">
+        <h1> El choripán fue elegido "el mejor hot dog" del mundo y Argentina suma otra estrella gastronómica</h1>
+            <p id="dos">
+            "No pedí ser argentino, solo tuve el privilegio", 
+            reza uno de los memes más característicos del Twitter local.
+            Allí aparece un gaucho enfundado en la bandera celeste y blanca, 
+            tomando un mate y rodeado de las tres copas del mundo, dos premios Oscar,
+            cinco medallas del Nobel, una Copa Davis, los oros olímpicos, un perro dogo,
+            cuadros de Messi, Diego, Favaloro, Fangio y San Martín. Al meme hay que hacerle lugar para que empiece a entrar la comida.
+            </p>
+            <button id="notDos">NOTICIA DOS</button>
+    </div>
+    <div class="'noticia tres">
+        <h1> Pascuas: el restaurante donde hacen una paella tan buena que fue premiada en Valencia</h1>
+            <p id="tres">
+            Usó las mejores materias primas. Logró sofritos, texturas, puntos de cocción e intensidad de sabores pocas veces vistos en el país.
+            En 2022 compitió en el World Paella Day Cup de Valencia, España y logró un extraordinario segundo puesto. Afinó, cada día más,
+            su técnica. Los resultados fueron notables. La paella de campo es una interpretación muy lograda de la clásica paella valenciana. 
+            Bajita. Su sabor cautiva al comensal desde el primer bocado. Sofrito, arroz, pollo, conejo, alubias, chauchas, pimentón y azafrán 
+            se unen en un abrazo armónico y suculento cuya intensidad crece hasta el apogeo final de un socarrat magistral, sin el menor rastro
+            de quemaduras.
+            </p>
+            <button id="notTres">NOTICIA TRES</button>            
+    </div>
+</body>
+</html>

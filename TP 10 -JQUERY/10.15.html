@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 10</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
+    
+    <script>
+        $(document).ready(()=>{
+            $('#botoncito').click(function(){
+                const mensaje = document.getElementsByTagName("td");
+                mensaje[0].innerHTML= "-";
+                mensaje[1].innerHTML= "-";
+                mensaje[2].innerHTML= "-";
+                mensaje[3].innerHTML= "-";
+                mensaje[4].innerHTML= "-";
+                mensaje[5].innerHTML= "-";
+                mensaje[6].innerHTML= "-";
+                mensaje[7].innerHTML= "-";
+                mensaje[8].innerHTML= "-";
+            });    
+        });
+
+    </script>
+    <style>
+        body{
+            background-color: black;
+        }
+        #una{
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+        }
+        #dos{
+            width: 500px;
+            height: 100px;
+            background-color: white;
+        }
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <table id="una">
+        <tr>
+          <td>Viva la patria</td>
+          <td>Viva la patria</td>
+          <td>Viva la patria</td>
+        </tr>
+        <tr>
+          <td id="ACA">Viva la patria</td>
+          <td>Viva la patria</td>
+          <td>Viva la patria</td>
+        </tr>
+        <tr>
+            <td>Viva la patria</td>
+            <td>Viva la patria</td>
+            <td>Viva la patria</td>
+        </tr>
+      </table>
+      <button id="botoncito">CAMBIAR CONTENIDO</button>
+      <table id="dos">
+        <tr>
+          <td>ARGENTINA</td>
+          <td>ARGENTINA</td>
+          <td>ARGENTINA</td>
+        </tr>
+        <tr>
+          <td>ARGENTINA</td>
+          <td>ARGENTINA</td>
+          <td>ARGENTINA</td>
+        </tr>
+        <tr>
+            <td>ARGENTINA</td>
+            <td>ARGENTINA</td>
+            <td>ARGENTINA</td>
+        </tr>
+      </table>
+</body>
+
+
+</html>

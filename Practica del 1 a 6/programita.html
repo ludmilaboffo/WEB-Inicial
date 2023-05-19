@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primer pagina web</title>
+    <link rel="stylesheet" type="text/css" href="miestilo.css">
+</head>
+<script>
+    
+    function Saludar(){
+        let nombre=document.getElementById("holita").value;
+        alert("Hola "+nombre+": ¿Cómo estás?");
+    }
+
+</script>
+
+<body>
+    <h1>HOLA HICE UNA PAGINA</h1>
+    <form class="hola">
+        <label for="hola">NOMBRE</label>
+        <input type="text" id="holita">
+        <br>
+        <input type="button" id="botoncito" value="saludame" onclick="Saludar();"></button>
+    </form>
+</body>
+</html>

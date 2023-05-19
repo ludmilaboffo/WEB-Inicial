@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
+    
+    <script>
+        $(document).ready(()=>{
+            $("#oculto").hide();
+            $("#mostrar").click(function(){
+                $(this).show(4000);
+            });  
+            $("#mostrar").click(function(){
+                $(this).hide(4000);
+                $("#oculto").show(5000);
+            });    
+        });
+
+    </script>
+</head>
+<body>
+    <div id="mostrar">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare magna ut viverra gravida. Mauris pulvinar ultrices nisi molestie elementum. In hac habitasse platea dictumst. Donec sed faucibus lectus. Aliquam erat volutpat. Nulla posuere sodales eros. Fusce neque turpis, congue vitae risus sed, ornare consectetur nibh. Sed eu hendrerit quam. Etiam laoreet quis ligula a facilisis. Ut facilisis purus turpis, eget elementum quam egestas in. In hac habitasse platea dictumst. Proin aliquet quam sodales posuere eleifend.</p>
+        <p>Proin eleifend blandit metus, non placerat dolor molestie a. Mauris dapibus ipsum diam, eu blandit sapien accumsan ut. Curabitur a ex ut tortor elementum malesuada vel in sapien. Aliquam dignissim ligula id augue vulputate porttitor. Etiam aliquam consequat libero, at dapibus tellus pulvinar a. Praesent sit amet tincidunt dolor. Aenean ut lobortis ipsum. Proin felis libero, efficitur sit amet dignissim at, porta interdum tellus.</p>
+        <p>Morbi ut velit eu lectus malesuada condimentum sed sit amet odio. Nulla varius, lorem fermentum consectetur placerat, mi massa fermentum magna, et vulputate augue turpis a odio. Mauris vitae massa tortor. Curabitur libero velit, sodales vitae viverra sed, faucibus nec velit. Mauris pharetra efficitur metus, nec lacinia enim dapibus quis. Vestibulum ut metus vel metus fringilla interdum. Aliquam erat volutpat. Aenean a lobortis augue. Donec volutpat velit nec libero laoreet mattis.</p>
+    </div>
+    <p id="oculto">El bloque de texto ha sido correctamente ocultado</p>
+    
+</body>
+</html>

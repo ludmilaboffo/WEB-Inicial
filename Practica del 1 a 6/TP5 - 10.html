@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP N°5</title>
+
+    <script type="text/javascript">
+    function convertirPesos(){
+        let valorIngreso= document.getElementById("conversordolar").value;
+        let total=(valorIngreso*300).toFixed(2);
+        document.getElementById("pesos").value=total;
+    }
+    </script>
+</head>
+<body>
+   <form class="converso">
+    <label for="dolar"> DOLARES</label>
+    <input type="number" id="conversordolar">
+    <label for="pesos">PESOS</label>
+    <input type="number" id="pesos">
+    <br>
+    <input type="button" id="dolar_botton" value="CONVERTIR" onclick="convertirPesos();">
+   </form>
+</body>
+</html>
